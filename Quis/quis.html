@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Rekomendasi — Cobra Sport Apparel</title>
+    
+    <link rel="icon" type="image/png" href="../file/Image/icon/logoCobra.png">
+    <link rel="shortcut icon" type="image/png" href="../file/Image/icon/logoCobra.png">
+    <link rel="apple-touch-icon" href="../file/Image/icon/logoCobra.png">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="quis.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-right">
+            <h1 class="V-collection"></h1>
+            <div class="pagination-container">
+                <img src="../file/Image/icon/logoCobra.png" alt="Logo Cobra Sport Apparel" class="logo">
+                <div class="pagination">
+                    <a href="../index.html">Beranda</a> | 
+                    <a href="../Pendaftaran/Pendaftaran.html">Cara Pesan</a> | 
+                    <a href="../Prestasi_dan_Kegiatan/Prestasi dan Kegiatan.html">Portofolio</a>
+                    <div class="website-title">COBRA SPORT APPAREL — QUIZ REKOMENDASI PRODUK</div>
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+    </div>
+    <main class="content">
+        <div class="content-container">
+            <div class="content-text">
+                <section class="section quiz-hero">
+                    <div class="section-head">
+                        <h2 class="section-title">Quiz rekomendasi produk</h2>
+                        <p class="section-subtitle">Jawab 5 pertanyaan singkat, nanti kami rekomendasikan produk yang paling cocok + tombol langsung untuk pesan.</p>
+                    </div>
+                </section>
+
+                <section class="quiz-shell" aria-label="Quiz rekomendasi produk Cobra Sport Apparel">
+                    <form id="quizForm" class="quiz-form">
+                        <div class="quiz-q">
+                            <div class="quiz-q-title">1) Kebutuhan utama kamu?</div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt"><input type="radio" name="need" value="match" required> Untuk pertandingan</label>
+                                <label class="quiz-opt"><input type="radio" name="need" value="training"> Untuk latihan rutin</label>
+                                <label class="quiz-opt"><input type="radio" name="need" value="event"> Untuk event/komunitas</label>
+                                <label class="quiz-opt"><input type="radio" name="need" value="esports"> Untuk tim esports</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-q">
+                            <div class="quiz-q-title">2) Olahraga / kategori</div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt"><input type="radio" name="sport" value="futsal" required> Futsal</label>
+                                <label class="quiz-opt"><input type="radio" name="sport" value="football"> Sepak bola</label>
+                                <label class="quiz-opt"><input type="radio" name="sport" value="cycling"> Sepeda (cycling)</label>
+                                <label class="quiz-opt"><input type="radio" name="sport" value="other"> Lainnya</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-q">
+                            <div class="quiz-q-title">3) Jumlah pesanan (perkiraan)</div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt"><input type="radio" name="qty" value="small" required> 1–10 pcs</label>
+                                <label class="quiz-opt"><input type="radio" name="qty" value="mid"> 11–25 pcs</label>
+                                <label class="quiz-opt"><input type="radio" name="qty" value="team"> 26+ pcs</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-q">
+                            <div class="quiz-q-title">4) Deadline</div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt"><input type="radio" name="deadline" value="rush" required> Cepat (urgent)</label>
+                                <label class="quiz-opt"><input type="radio" name="deadline" value="normal"> Normal</label>
+                                <label class="quiz-opt"><input type="radio" name="deadline" value="flex"> Fleksibel</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-q">
+                            <div class="quiz-q-title">5) Kamu sudah punya desain/logo?</div>
+                            <div class="quiz-options">
+                                <label class="quiz-opt"><input type="radio" name="design" value="yes" required> Sudah ada</label>
+                                <label class="quiz-opt"><input type="radio" name="design" value="no"> Belum, minta dibantu</label>
+                            </div>
+                        </div>
+
+                        <div class="quiz-actions">
+                            <button class="btn btn-primary" type="submit">Lihat rekomendasi</button>
+                            <a class="btn btn-ghost" href="../Pendaftaran/Pendaftaran.html">Cara pesan</a>
+                        </div>
+                    </form>
+
+                    <div id="quizResult" class="quiz-result" style="display:none;">
+                        <div class="section-head">
+                            <h2 class="section-title">Rekomendasi untuk kamu</h2>
+                            <p id="resultSummary" class="section-subtitle"></p>
+                        </div>
+                        <div id="resultCards" class="product-grid"></div>
+                        <div class="section-actions">
+                            <a id="waLink" class="btn btn-primary" href="#" target="_blank" rel="noreferrer">Pesan via WhatsApp</a>
+                            <a class="btn btn-ghost" href="https://shopee.co.id/cobra_sport" target="_blank" rel="noreferrer">Lihat Shopee</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="quis.js"></script>
+</body>
+</html>

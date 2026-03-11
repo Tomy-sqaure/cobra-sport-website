@@ -1,0 +1,29 @@
+@import url("../styles.css");
+
+/* Page-specific tweaks */
+.content-text {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.portfolio-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 12px auto 0;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+@media (max-width: 980px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
