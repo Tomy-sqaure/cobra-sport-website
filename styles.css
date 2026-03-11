@@ -416,12 +416,12 @@ footer {
     border-left: 4px solid #3F51B5;
     background-color: var(--panel);
     transition: all 0.3s ease;
-    color: rgb(255, 255, 255);
+    color: var(--muted);
 }
 
 .content-article p:hover {
     transform: translateX(10px);
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--panel);
 }
 
 .content-article h1 {
