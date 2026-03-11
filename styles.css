@@ -381,7 +381,7 @@ footer {
     align-self: center !important;
     margin: 60px auto !important;
     max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--panel);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -389,8 +389,9 @@ footer {
     padding: 10px 25px;
     margin: 10px 0;
     border-left: 4px solid #4CAF50;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: var(--panel);
     transition: all 0.3s ease;
+    color: rgb(14, 203, 250);
 }
 
 .program-unggulan p:hover {
@@ -404,18 +405,18 @@ footer {
     padding-bottom: 10px;
 }
 
-/* Styling untuk artikel dengan layout zigzag */
 .article.content-article {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--panel);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .content-article p {
     padding: 10px 25px;
     margin: 10px 0;
-    border-left: 4px solid #3F51B5; /* Warna biru untuk membedakan dengan program unggulan */
-    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 4px solid #3F51B5;
+    background-color: var(--panel);
     transition: all 0.3s ease;
+    color: rgb(255, 255, 255);
 }
 
 .content-article p:hover {
@@ -424,12 +425,11 @@ footer {
 }
 
 .content-article h1 {
-    color: #303F9F; /* Warna biru gelap untuk judul */
+    color: #303F9F;
     border-bottom: 2px solid #3F51B5;
     padding-bottom: 10px;
 }
 
-/* Mempertahankan zigzag namun dengan styling baru */
 .content-article:nth-child(odd) {
     align-self: flex-start;
     margin-left: 20%;
@@ -475,7 +475,6 @@ footer {
     display: inline-block;
 }
 
-/* Sesuaikan animasi typing untuk konten yang lebih panjang */
 @keyframes typing {
     from { 
         width: 0;
