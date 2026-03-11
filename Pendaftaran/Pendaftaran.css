@@ -1,0 +1,324 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../file/Image/bg/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 85px;
+    background: linear-gradient(rgba(129, 135, 200, 0.95), rgba(135, 132, 132, 0.95));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    color: rgb(0, 255, 98);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    font-size: 18px;
+    top: 0;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.random-image {
+    width: 64px;
+    height: 64px;
+}
+
+.V-collection {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: rgb(0, 0, 255);
+    line-height: 1;
+}
+
+.website-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 255, 98);
+    width: 100%;
+    padding: 10px 0;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.pagination-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.pagination-container2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.pagination {
+    margin-top: 0;
+}
+
+.pagination a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    color: #00ff1a;
+    text-decoration: underline;
+}
+
+.welcome-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.welcome-message {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.separator {
+    width: 100vw;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 10px 0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo {
+    width: 64px;
+    height: 64px;
+    margin: 0;
+    order: unset;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-clip: content-box;
+    margin-top: 120px;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.content img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+    order: 2;
+}
+
+.content-container {
+    order: 1;
+    width: 100%;
+    display: flex;
+    position: inherit;
+    z-index: 3;
+    height: -webkit-fill-available;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    padding-bottom: 40px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row-reverse; /* Ubah menjadi row-reverse */
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 5px;
+}
+.form-group:hover {
+    border: 2px solid green;
+}
+
+.Buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 10px 20px;
+    gap: 156px;
+    align-content: space-between;
+}
+
+label {
+    flex: 1; /* Membuat label mengambil ruang yang cukup */
+    margin-right: 10px; /* Jarak antara label dan input */
+    text-align: left; /* Rata kiri */
+}
+
+input, select, textarea {
+    flex: 2; /* Membuat input mengambil ruang yang lebih besar */
+    padding: 10px;
+    border: 1px solid #3b3b3b; /* Garis batas */
+    border-radius: 4px; /* Sudut melengkung */
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="radio"] {
+    margin-right: 5px; /* Mengatur jarak antara radio button dan label */
+}
+
+#directoryInput {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #222;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+#orientationToggle {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Warna judul */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 1200px;
+    color: #000000;
+}
+
+label {
+    margin: 10px 0 5px; /* Jarak antara label dan input */
+}
+
+button {
+    padding: 8px 38px;
+    background-color: #4CAF50; /* Warna tombol */
+    color: white; /* Warna teks tombol */
+    border: none;
+    border-radius: 10px; /* Sudut melengkung */
+    cursor: pointer; /* Kursor tangan saat hover */
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #45a049; /* Warna tombol saat hover */
+}
+
